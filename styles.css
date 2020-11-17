@@ -85,12 +85,13 @@ You will find this is far easier than the opposite task of using CSS to cram you
  .graph {
      margin: auto;
      padding: 16px;
+     padding-top: 5px;
      max-width: 90%;
  }
 
  .sources {
      margin: auto;
-     padding-top: 1px;
+     padding-top: 3px;
      padding: 10px;
      max-width: 90%;
  }
