@@ -40,30 +40,14 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
  h2 {
      font-size: 2em;
-     text-align: center;
-     font-family: 'Cormorant Garamond', serif;
+     text-align: left;
+     font-family: font-family: 'Playfair Display', serif;
  }
 
  h3 {
      font-size: 1.4em;
-     text-align: center;
-     font-family: 'Cormorant Garamond', serif;
- }
-
- .icon-container h4 {
-     font-size: 1.75em;
-     text-align: center;
- }
-
- .icon-container h5 {
-     font-size: 1em;
-     line-height: 1.5em;
-     text-align: center;
- }
-
- .icon-container h6 {
-     font-size: 1.75em;
-     text-align: center;
+     text-align: left;
+     font-family: font-family: 'Playfair Display', serif;
  }
 
  figcaption {
@@ -74,7 +58,7 @@ You will find this is far easier than the opposite task of using CSS to cram you
  p {
      line-height: 1.75em;
      font-size: 1.2em;
-     text-align: center;
+     text-align: left;
      font-family: 'Cormorant Garamond', serif;
  }
 
@@ -92,43 +76,22 @@ You will find this is far easier than the opposite task of using CSS to cram you
      text-align: justify;
  }
 
- .housed {
-     background-color: #468AE1;
-     padding: 2px;
-     font-size: 1.5em;
- }
-
- .unhoused {
-     background-color: #D01C0A;
-     padding: 2px;
-     font-size: 1.5em;
- }
-
- .stats {
-     display: flex;
-     justify-content: space-between;
-     font-size: 3em;
-     justify-content: center;
- }
-
- .stat1 {
-     color: #468AE1;
- }
-
- .stat2 {
-     color: #D01C0A;
- }
-
- .icon-border {
-     border: 1.5px solid Black;
-     border-width: medium;
-     margin: 0.5em;
-     padding: 0.5em;
- }
-
  .main {
      margin: auto;
      padding: 7px;
+     max-width: 90%;
+ }
+
+ .graph {
+     margin: auto;
+     padding: 16px;
+     max-width: 90%;
+ }
+
+ .sources {
+     margin: inherit;
+     padding-top: 1px;
+     padding: 5px;
      max-width: 90%;
  }
 
@@ -156,24 +119,30 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 
 *********************************************************************/
- @media(min-width: 729px) {
+ @media(min-width: 400px) {
 
      /* Any adjustments for desktop and larger go here.
     Note these styles will be applied to anything 729px or larger -- so desktop */
      h3 {
          font-size: 1.75em;
-         text-align: center;
+         text-align: left;
      }
 
      p {
          line-height: 1.4em;
          font-size: 1.5em;
-         text-align: center;
+         text-align: left;
+     }
+
+     h7 {
+         line-height: 1.4em;
+         font-size: 1.5em;
+         text-align: left;
      }
 
      .icon-container h6 {
          font-size: 2.5em;
-         text-align: center;
+         text-align: left;
      }
 
      .icon-container h5 {
@@ -195,5 +164,17 @@ You will find this is far easier than the opposite task of using CSS to cram you
          display: flex;
          justify-content: space-between;
          font-size: 4em;
+     }
+
+     .main {
+         margin: auto;
+         padding: 40px;
+         max-width: 90%;
+     }
+
+     .graph {
+         margin: auto;
+         padding: 20px;
+         max-width: 90%;
      }
  }
